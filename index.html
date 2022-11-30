@@ -12,18 +12,26 @@
       <h1>ROCK!! PAPER!! SCISSOR!!</h1>
     </header>
     <div class="score-board">
-      <div class="score-board__player"></div>
-      <span class="score-board__player--scores"></span>
-      <div class="score-board__comp"></div>
-      <span class="score-board__comp--scores"></span>
+      <div class="score-board__player">Player</div>
+      <span class="score-board__player--scores">0</span>
+      <div class="score-board__comp">Computer</div>
+      <span class="score-board__comp--scores">0</span>
     </div>
     <div class="result">
       <p class="result__display">The player/comp won</p>
     </div>
     <div class="images">
-      <div class="images__rock"><img src=""</div>
+      <div class="images__rock">
+        <img class="images__rock--active" src="./img/fist.png" />
+      </div>
+      <div class="images__paper">
+        <img class="images__paper--active" src="./img/hand.png" />
+      </div>
+      <div class="images__scissor">
+        <img class="images__scissor--active" src="./img/scissors.png" />
+      </div>
     </div>
-
+    <p class="motivate">Time to Win</p>
     <script src="./game.js"></script>
   </body>
 </html>
