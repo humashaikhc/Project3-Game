@@ -83,11 +83,13 @@ buttonReset.addEventListener("click", () => {
     console.log("button clicked")
     player = 0;
     comp = 0;
+    playerScore.innerHTML = 0;
+    compScore.innerHTML = 0;
     result.innerHTML= `Wanna Play Again?`;
     motivate.innerHTML = `Start!`
 
 });
 
-//var namehi = window.prompt("What is your name?");
-//result.innerHTML = `Ready to play ? ${namehi}`;
+var namehi = window.prompt("What is your name?");
+result.innerHTML = `Ready to play ? ${namehi}`;
 

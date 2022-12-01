@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: $font-family;
-  background-color: $color-text;
+  background-color: $color-primary;
   //  color:white;
 }
 
@@ -52,13 +52,20 @@ header {
 .result {
   font-size: 3rem;
 
-  .result__display {
+  .resultDisplay {
     text-align: center;
+    color: white;
+    margin-bottom: 2rem;
   }
 }
 
 .images {
-  display: flex;
+ text-align: center;
+
+&__item{
+   display: inline-block;
+  
+}
 }
 .rock,
 .paper,
@@ -66,3 +73,47 @@ header {
 {
    width:10rem;
 }
+
+.motivate{
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    margin: 20px;
+}
+
+.name{
+    text-align: center;
+    background-color: $color-secondary;
+    .nameReset{
+        margin: 20px;
+        background-color: $color-primary;
+        color:white;
+        border-color: 8px $color-primary;
+        font-size: 2rem;
+        padding: 5px;
+        border-radius: 3rem;
+    }
+}
+
+@media screen and (min-width:768px){
+    .title{
+        font-size: 3rem;
+    }
+    .result{
+        font-size: 4rem;
+    }
+    .motivate{
+        font-size: 3rem;
+    }
+    .name{
+        .nameReset{
+            padding: 15px;
+        }
+    }
+    .rock,
+    .paper,
+    .scissor{
+        width: 15rem;
+    }
+
+} 

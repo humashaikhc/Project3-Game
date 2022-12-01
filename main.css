@@ -4,7 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Rubik Distressed, cursive;
-  background-color: rgb(6, 76, 6);
+  background-color: black;
 }
 
 header {
@@ -52,16 +52,62 @@ header .title {
 .result {
   font-size: 3rem;
 }
-.result .result__display {
+.result .resultDisplay {
   text-align: center;
+  color: white;
+  margin-bottom: 2rem;
 }
 
 .images {
-  display: flex;
+  text-align: center;
+}
+.images__item {
+  display: inline-block;
 }
 
 .rock,
 .paper,
 .scissor {
   width: 10rem;
+}
+
+.motivate {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  margin: 20px;
+}
+
+.name {
+  text-align: center;
+  background-color: rgb(43, 213, 43);
+}
+.name .nameReset {
+  margin: 20px;
+  background-color: black;
+  color: white;
+  border-color: 8px black;
+  font-size: 2rem;
+  padding: 5px;
+  border-radius: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 3rem;
+  }
+  .result {
+    font-size: 4rem;
+  }
+  .motivate {
+    font-size: 3rem;
+  }
+  .name .nameReset {
+    padding: 15px;
+  }
+  .rock,
+.paper,
+.scissor {
+    width: 15rem;
+  }
 }/*# sourceMappingURL=main.css.map */
