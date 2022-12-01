@@ -5,9 +5,8 @@ let result = document.querySelector(".resultDisplay");
 const rock = document.getElementById("r");
 const paper = document.getElementById("p");
 const scissor = document.getElementById("s");
-let name = document.querySelectorAll("Input");
-const buttonName = document.querySelector("nameButton");
-const buttonReset = document.querySelector("nameReset");
+const buttonReset = document.querySelector(".nameReset");
+let motivate = document.querySelector(".motivate")
 
 let player = 0;
 let comp = 0;
@@ -32,21 +31,18 @@ let win = (playerChoice, computerChoice) => {
   player++;
   playerScore.innerHTML = player;
   compScore.innerHTML = comp;
-  result.innerHTML = ` ${word(playerChoice)} beats ${word(
-    computerChoice
-  )}. You win!!`;
+  result.innerHTML = ` ${word(playerChoice)} beats ${word(computerChoice)}. You win!!`;
+  motivate.innerHTML = `Computer chose ${word(computerChoice)}`;
 };
 let lose = (playerChoice, computerChoice) => {
   comp++;
   compScore.innerHTML = comp;
-  result.innerHTML = ` ${word(playerChoice)} loses to ${word(
-    computerChoice
-  )}. You Lost!!`;
+  result.innerHTML = ` ${word(playerChoice)} loses to ${word(computerChoice)}. You Lost!!`;
+  motivate.innerHTML = `Computer chose ${word(computerChoice)}`;
 };
 let draw = (playerChoice, computerChoice) => {
-  result.innerHTML = ` ${word(playerChoice)} = ${word(
-    computerChoice
-  )}. It's a Draw!!`;
+  result.innerHTML = ` ${word(playerChoice)} = ${word(computerChoice)}. It's a Draw!!`;
+  motivate.innerHTML = `Computer chose ${word(computerChoice)}`;
 };
 
 let game = (playerChoice) => {
@@ -83,5 +79,15 @@ let main = () => {
 };
 main();
 
-var namehi = window.prompt("What is your name?");
-result.innerHTML = `Ready to play ? ${namehi}`;
+buttonReset.addEventListener("click", () => {
+    console.log("button clicked")
+    player = 0;
+    comp = 0;
+    result.innerHTML= `Wanna Play Again?`;
+    motivate.innerHTML = `Start!`
+
+});
+
+//var namehi = window.prompt("What is your name?");
+//result.innerHTML = `Ready to play ? ${namehi}`;
+
