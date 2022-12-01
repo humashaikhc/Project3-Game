@@ -9,29 +9,37 @@
   </head>
   <body>
     <header>
-      <h1>ROCK!! PAPER!! SCISSOR!!</h1>
+      <h1 class="title">ROCK!! PAPER!! SCISSOR!!</h1>
     </header>
     <div class="score-board">
       <div class="score-board__player">Player</div>
-      <span class="score-board__player--scores">0</span>
-      <div class="score-board__comp">Computer</div>
-      <span class="score-board__comp--scores">0</span>
+      <div class="score-board__comp">Comp</div>
+      <span class="score-board__player--scores" id="score">0</span>:
+      <span class="score-board__comp--scores" id="scoreComp">0</span>
     </div>
     <div class="result">
-      <p class="result__display">The player/comp won</p>
+      <p class="resultDisplay">
+        Ready to Play?
+      </p>
     </div>
     <div class="images">
-      <div class="images__rock">
-        <img class="images__rock--active" src="./img/fist.png" />
+      <div class="images__item" id="r">
+        <img class="rock" src="./img/fist.png" />
       </div>
-      <div class="images__paper">
-        <img class="images__paper--active" src="./img/hand.png" />
+      <div class="images__item" id="p">
+        <img class="paper" src="./img/hand.png" />
       </div>
-      <div class="images__scissor">
-        <img class="images__scissor--active" src="./img/scissors.png" />
+      <div class="images__item" id="s">
+        <img class="scissor" src="./img/scissors.png" />
       </div>
     </div>
-    <p class="motivate">Time to Win</p>
+    <p class="motivate">Time to Win!!</p>
+    <div class="name">
+      <label class="nameTitle">Input player name here:</label>
+      <input type = "text" class="Input" />
+      <button class="nameButton">Player Name</button>
+      <button class="nameReset">Reset</button>
+    </div>
     <script src="./game.js"></script>
   </body>
 </html>

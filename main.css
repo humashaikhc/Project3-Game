@@ -1,3 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Merienda&family=Neucha&family=Rubik+Distressed&display=swap");
 * {
-  background-color: #8FBABC;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Rubik Distressed, cursive;
+  background-color: rgb(6, 76, 6);
+}
+
+header {
+  background: rgb(43, 213, 43);
+  height: 100px;
+  padding: 30px;
+}
+header .title {
+  text-align: center;
+  background-color: rgb(43, 213, 43);
+  color: black;
+}
+
+.score-board {
+  margin: 5rem auto;
+  border: 3px solid white;
+  border-radius: 10px;
+  text-align: center;
+  width: 15rem;
+  height: 10rem;
+  color: white;
+  font-size: 50px;
+  position: relative;
+  padding: 47px;
+}
+.score-board__player {
+  padding: 4px;
+  border-radius: 10px;
+  background-color: rgb(95, 154, 95);
+  position: absolute;
+  top: 50px;
+  left: -8rem;
+  font-size: 40px;
+}
+.score-board__comp {
+  padding: 4px;
+  position: absolute;
+  left: 14rem;
+  background-color: rgb(95, 154, 95);
+  border-radius: 10px;
+  top: 50px;
+  font-size: 40px;
+}
+
+.result {
+  font-size: 3rem;
+}
+.result .result__display {
+  text-align: center;
+}
+
+.images {
+  display: flex;
+}
+
+.rock,
+.paper,
+.scissor {
+  width: 10rem;
 }/*# sourceMappingURL=main.css.map */
