@@ -19,11 +19,11 @@ let compChoice = () => {
 
 let word = (letter) => {
   if (letter === "r") {
-    return "Rock";
+    return "🪨";
   } else if (letter === "p") {
-    return "Paper";
+    return "📃";
   } else {
-    return "Scissors";
+    return "✂️";
   }
 };
 
@@ -31,17 +31,17 @@ let win = (playerChoice, computerChoice) => {
   player++;
   playerScore.innerHTML = player;
   compScore.innerHTML = comp;
-  result.innerHTML = ` ${word(playerChoice)} beats ${word(computerChoice)}. You win!!`;
+  result.innerHTML = ` ${word(playerChoice)} beats ${word(computerChoice)}. You win!!❤️`;
   motivate.innerHTML = `Computer chose ${word(computerChoice)}`;
 };
 let lose = (playerChoice, computerChoice) => {
   comp++;
   compScore.innerHTML = comp;
-  result.innerHTML = ` ${word(playerChoice)} loses to ${word(computerChoice)}. You Lost!!`;
+  result.innerHTML = ` ${word(playerChoice)} loses to ${word(computerChoice)}. You Lost!!💩`;
   motivate.innerHTML = `Computer chose ${word(computerChoice)}`;
 };
 let draw = (playerChoice, computerChoice) => {
-  result.innerHTML = ` ${word(playerChoice)} = ${word(computerChoice)}. It's a Draw!!`;
+  result.innerHTML = ` ${word(playerChoice)} = ${word(computerChoice)}. It's a Draw!!🙄`;
   motivate.innerHTML = `Computer chose ${word(computerChoice)}`;
 };
 
